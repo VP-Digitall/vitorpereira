@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vitor Pereira</title>
+
+  <!-- Fonte + Tailwind CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Raleway', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+    }
+    .bg-gif {
+      background: url('boneco_animado_bebendo.gif') no-repeat center center fixed;
+      background-size: cover;
+      
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+  <!-- Cabeçalho -->
+  <header class="fixed top-0 left-0 w-full bg-black bg-opacity-70 backdrop-blur-md z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="text-2xl font-light tracking-wider">Vitor Pereira</div>
+      <nav class="space-x-6 hidden md:flex">
+      
+      </nav>
+      <a href="https://www.instagram.com/vitorpereirajs/" target="_blank" class="ml-4">
+        <img src="https://img.icons8.com/ios-filled/24/ffffff/instagram-new.png" alt="Instagram"/>
+      </a>
+    </div>
+  </header>
+
+  <!-- Tela inicial com GIF -->
+  <section class="bg-gif h-screen flex items-center justify-center relative">
+    <div class="bg-black bg-opacity-0 p-10 rounded-xl text-center mt-16">
+      <h1 class="text-4xl md:text-6xl font-bold mb-4">TINHO</h1>
+      <p class="text-lg md:text-xl">Tranquilo, indeciso, narigudo, honesto, ocupado.</p>
+    </div>
+  </section>
+
+  <!-- Destaque Spotify -->
+  <section id="spotify" class="py-20 px-6 md:px-20 bg-green-500 text-white text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Minha Vibe 🎶</h2>
+      <p class="text-lg mb-6">
+        Quer entrar na minha energia? Essa é a playlist que me move antes dos treinos e nas minhas jornadas!
+      </p>
+      <a href="https://open.spotify.com/playlist/3SdsinysCR4XP30WbfTGJN?si=1GWwu7fyQ8aJluDAp2RtUw" target="_blank"
+         class="inline-block bg-black text-white px-8 py-3 rounded-full text-lg font-semibold shadow-lg hover:scale-105 transition-transform">
+        Ouvir Playlist no Spotify
+      </a>
+    </div>
+  </section>
+
+  <!-- Frase de efeito -->
+  <section id="frase" class="py-20 px-6 md:px-20 bg-gray-900 text-white flex items-center justify-center">
+    <blockquote class="text-center max-w-2xl">
+      <p class="text-2xl md:text-3xl italic font-light">
+        "Ta bom, mas não se irrite!!"
+      </p>
+      <span class="block mt-4 text-sm text-gray-400">— Chaves</span>
+    </blockquote>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-black py-6 text-center text-sm text-gray-400">
+    <p>&copy; 2025 Vitor Pereira. Feito com carinho e café ☕</p>
+  </footer>
+
+</body>
+</html>
